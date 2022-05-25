@@ -23,7 +23,6 @@
 
 }
 
-
 @font-face {
     font-family: 'open_semibold';
     src: url('../fonts/opensans-semibold.eot');
@@ -35,12 +34,6 @@
     font-style: normal;
 
 }
-
-
-
-
-
-
 
 section, footer {
 	background: #fffcfc;
@@ -61,17 +54,6 @@ a:focus{
 .container{
 	max-width: 1130px;
 }
-
-
-
-
-
-
-
-
-
-
-/*		Header 		*/
 
 header{
 	position: relative;
@@ -183,17 +165,6 @@ header .social li{
 header .social li:first-child{
 	margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
-/*		Hero section 		*/
 
 .hero{
 	display: block;
@@ -354,17 +325,6 @@ a.app_link{
   font-weight: bolder;
 }
 
-
-
-
-
-
-
-
-
-
-/*		Featured on section 		*/
-
 .featured_on{
 	width: 100%;
 	padding: 25px 0;
@@ -383,17 +343,6 @@ a.app_link{
 .featured_on li:first-child{
 	margin-left: 0;
 }
-
-
-
-
-
-
-
-
-
-
-/*		About section 		*/
 
 .about{
 	padding: 100px 0;
@@ -481,17 +430,6 @@ a.app_link{
 	display: inline-block;
 }
 
-
-
-
-
-
-
-
-
-
-/*		App features 		*/
-
 .app_features{
 	width: 100%;
 	padding: 100px 0 20px 0;
@@ -526,17 +464,6 @@ a.app_link{
 .app_features .details:nth-child(3n+1){
 	clear: both;
 }
-
-
-
-
-
-
-
-
-
-
-/*		Testimonials section 		*/
 
 .testimonials{
 	padding: 100px 0;
@@ -584,7 +511,7 @@ a.app_link{
 	font-size: 14px;
 }
 
-.#tslider{
+#tslider{
 	text-align: center!important;
 	position: relative!important;
 }
@@ -633,17 +560,6 @@ a.app_link{
 	background-position: -33px 0;
 }
 
-
-
-
-
-
-
-
-
-
-/*		Subscription section 		*/
-
 .sub_box{
 	width: 100%;
 	padding: 100px 0;
@@ -684,8 +600,6 @@ a.app_link{
 	-o-border-bottom-left-radius: 2px;
 	-moz-border-bottom-left-radius: 2px;
 	-webkit-border-bottom-left-radius: 2px;
-
-
 }
 
 .sub_box #mc_submit{
@@ -741,17 +655,6 @@ a.app_link{
 	display: none;
 }
 
-
-
-
-
-
-
-
-
-
-/*		Footer 		*/
-
 footer{
 	padding: 100px 0;
 	text-align: center;
@@ -777,16 +680,6 @@ footer .copyright a{
 	color: #565555;
 }
 
-
-
-
-
-
-
-
-
-/*		Responsive CSS 		*/
-
 @media (max-width: 360px) {
 	.featured_on li{
 		display: block;
@@ -795,9 +688,6 @@ footer .copyright a{
 }
 
 @media (max-width: 767px) {
-
-
-	/*		Header 		*/
 	header .logo{
 		margin-right: 0;
 	}
@@ -819,7 +709,6 @@ footer .copyright a{
 	header nav.show{
 		display: block;
 	}
-
 
 	header nav li{
 		display: block;
@@ -846,13 +735,6 @@ footer .copyright a{
 	header .social li{
 		margin-left: 10px;
 	}
-
-
-
-
-
-
-	/*		Hero section 		*/
 	.hero .caption{
 		margin-left: 0;
 	}
@@ -865,11 +747,6 @@ footer .copyright a{
 		text-align: center;
 	}
 
-
-
-
-
-	/*		Featured on section		*/
 	.featured_on{
 		padding: 25px 0 5px 0!important;
 	}
@@ -878,12 +755,6 @@ footer .copyright a{
 		margin-bottom: 25px!important;
 	}
 
-
-
-
-
-
-	/*		About Section 		*/
 	.about .features_list {
 		text-align: center;
 		margin: 0;
@@ -904,12 +775,6 @@ footer .copyright a{
 		margin-top: 20px;
 	}
 
-
-
-
-
-
-	/*		Subscription section 		*/
 	.sub_box #mc-email,
 	.sub_box #mc_submit{
 		display: block;

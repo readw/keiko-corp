@@ -1,43 +1,23 @@
 $(document).ready(function(){
-
-	//Navigation menu scrollTo
 	$('header nav ul li a').click(function(event){
 		event.preventDefault();
 		var section = $(this).attr('href');
 		var section_pos = $(section).position();
-
 		if(section_pos){
 			$(window).scrollTo({top:section_pos.top, left:'0px'}, 1000);
 		}
-		
 	});
 
 	$('.app_link').click(function(e){
-		event.preventDefault();
+		e.preventDefault();
 		$(window).scrollTo({top:$("#hero").position().top, left:'0px'}, 1000);		
 	});
 
-
-
-
-
-
-
-
-	//Show & Hide menu on mobile
 	$('.burger_icon').click(function(){
 		$('header nav').toggleClass('show');
 		$('header .burger_icon').toggleClass('active');
 	});
 
-	
-
-
-
-
-
-
-	//wow.js on scroll animations initialization
 	wow = new WOW(
 	    {
 		  animateClass: 'animated',
@@ -47,24 +27,8 @@ $(document).ready(function(){
 	);
 	wow.init();
 
-
-
-
-
-
-
-
-	//parallax effect initialization
 	$('.hero').parallax("50%", 0.3);
 
-
-
-
-
-
-
-
-	//Nice scroll initialization
 	$("html").niceScroll({
 		scrollspeed: 50,
 		autohidemode : false,
@@ -76,14 +40,6 @@ $(document).ready(function(){
 		zindex : 999
 	});
 
-
-
-
-
-
-
-
-	//Testimonials slider initialization
 	$("#tslider").owlCarousel({
 		items : 1,
 		navigation : true,
@@ -96,26 +52,17 @@ $(document).ready(function(){
 		transitionStyle : "fade"
 	});
 
-
-
-
-
-
-
-	//Mailchimp subscription form initialization
 	$('#submit_form').submit(function(){
 		$('#mc_submit').attr('disabled', 'disabled');		
    		processing('icon', 'loading');
 	});
 
 	if($('#submit_form').length){
-		//Mailchim Subscription form
 		$('#submit_form').ajaxChimp({
 		    callback: chimpResponce
 		});
-	}	
+	}
 
-	//Mail chimp callback function
 	function chimpResponce(resp) {
    		if (resp.result === 'success') {   			
    			processing('loading', 'icon');
@@ -132,15 +79,8 @@ $(document).ready(function(){
 	}
 
 	function processing(hide, show){
-			$('#mc_submit i').removeClass(hide).addClass(show);
+		$('#mc_submit i').removeClass(hide).addClass(show);
 	}
-
-
-
-
-
-
-
 
 	//Popup video
 	$('#play_video').click(function(e){
@@ -158,10 +98,5 @@ $(document).ready(function(){
 		$('.about_video').fadeOut(200,function(){
 			$('iframe', this).remove();
 		});
-
 	});
-
-
-
-
 });
